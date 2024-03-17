@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-container">
+        <h2 class="heading-secondary">Word Game</h2>
+        <div class="grid grid--3-cols">
+          <p id="timer" class="timer">Time</p>
+          <p id="score" class="score">Score</p>
+
+          <button class="btn" id="startButton">Start</button>
+          <div class="game-rules">
+            <h3 class="heading-tertiary">How to play</h3>
+            <ul class="list">
+              <li class="list-item">Click the start button to begin</li>
+              <li class="list-item">Find as many words as you can</li>
+              <li class="list-item">You have only 30 seconds for each word</li>
+              <li class="list-item">
+                If you want to change the word click the "Next word" button
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p id="wordDisplay" class="word"></p>
+            <div id="wordBoxes" class="hidden-word"></div>
+            <div id="alphabetContainer"></div>
+          </div>
+          <div class="action-btns">
+            <button class="btn" id="hintButton">Hint</button>
+            <div id="hints" class="word"></div>
+            <button class="btn" id="nextButton">Next word</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
